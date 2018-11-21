@@ -30,4 +30,4 @@ for(var i = 0; i< scope.course[courseIndex].question.faculty.length; i++){
 scope.$apply();
 
 
-// $scope.submitFeedback();
+// scope.submitFeedback();
