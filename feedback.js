@@ -1,4 +1,4 @@
-var minRating=2; 	//min can be 1
+var minRating=5; 	//min can be 1
 var maxRating=5; 	//max can be 5
 
 var courseIndex=0;
