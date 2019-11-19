@@ -1,5 +1,61 @@
-/*code for new django based student portal*/
+/*---------Code updtaed ---------*/
 
+//Change this
+var min,max;
+min=1; //<----- min>=1 && <=max
+max=5; //<----- max <=5 && >=min
+
+
+//----------Don't change this--------------
+var id,funcName,i,b,el,val;
+if(min>max||min<=0||max>=6){
+	min=1;
+	max=5;
+}
+function getRand(){
+	return Math.floor(Math.random()*(max-min)+min);
+}
+b=1;
+try {
+for(i=1;i<=40&&b;i++){
+	id="courseFeedback";
+	id+=i.toString();
+	el=document.getElementById(id);
+	if(el!==null ){
+	funcName=document.getElementById(id).onchange;
+	val=getRand();
+	document.getElementById(id).value=val;			
+	funcName(i);
+	}else{
+		b=0;
+	}
+}
+}
+catch(err){
+}
+try {
+b=1;
+for(i=1;i<=40&&b;i++){
+	id="facultyFeedback";	
+	id+=i.toString();
+	el=document.getElementById(id);
+	if(el!==null && typeof(el)!=='undefined'){
+	val=getRand();
+	document.getElementById(id).value=val;
+	funcName=document.getElementById(id).onchange;
+	funcName(i);
+	}else{
+		b=0;
+	}
+}
+}
+catch(err){}
+document.getElementById('submitButton').click();  //<---   Don't copy this if you wan't to make changes before submitting
+
+
+
+/*code for new django based student portal*/
+/*
 var minRating=4; 	//min can be 1
 var maxRating=5; 	//max can be 5
 function randomizeRating(){
@@ -22,7 +78,7 @@ for(var i = 1; i< 21; i++){
 
 	facultyFeedbackChanged(i);
 }
-
+*/
 
 
 /*
