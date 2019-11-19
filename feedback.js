@@ -50,7 +50,7 @@ for(i=1;i<=40&&b;i++){
 }
 }
 catch(err){}
-document.getElementById('submitButton').click();
+document.getElementById('submitButton').click();  //<---   Don't copy this if you wan't to make changes before submitting
 
 
 
